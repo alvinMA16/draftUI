@@ -1134,8 +1134,8 @@
                                             <div class="d-flex">
                                                 <select class="form-select form-select-sm me-2">
                                                     <option selected>所有角色</option>
+                                                    <option>超级管理员</option>
                                                     <option>管理员</option>
-                                                    <option>编辑者</option>
                                                     <option>普通用户</option>
                                                 </select>
                                                 <select class="form-select form-select-sm">
@@ -1221,7 +1221,7 @@
                                                             </div>
                                                         </td>
                                                         <td>wangwu@example.com</td>
-                                                        <td><span class="badge bg-info text-dark">编辑者</span></td>
+                                                        <td><span class="badge bg-secondary">普通用户</span></td>
                                                         <td><span class="badge bg-success">活跃</span></td>
                                                         <td>
                                                             <button class="btn btn-sm btn-outline-secondary me-1"><i class="fas fa-edit"></i></button>
@@ -1279,7 +1279,7 @@
                                                         </td>
                                                         <td>
                                                             <div class="d-flex align-items-center">
-                                                                <img src="https://via.placeholder.com/40" class="rounded-circle me-2">
+                                                                <img src="https://images.unsplash.com/photo-1531891570158-e71b35a485bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="rounded-circle me-2" style="width: 40px; height: 40px; object-fit: cover;">
                                                                 <div>
                                                                     <h6 class="mb-0">周八</h6>
                                                                     <small class="text-muted">2023-05-01 加入</small>
@@ -1323,7 +1323,6 @@
                                     <div class="card-header bg-white">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <h5 class="mb-0">角色管理</h5>
-                                            <button class="btn btn-sm btn-outline-primary"><i class="fas fa-plus me-1"></i> 添加角色</button>
                                         </div>
                                     </div>
                                     <div class="card-body">
@@ -1350,21 +1349,11 @@
                                             </li>
                                             <li class="list-group-item d-flex justify-content-between align-items-center px-0">
                                                 <div>
-                                                    <h6 class="mb-0"><span class="badge bg-info text-dark me-2">编辑者</span></h6>
-                                                    <small class="text-muted">可以创建和编辑内容</small>
-                                                </div>
-                                                <div>
-                                                    <span class="badge bg-light text-dark">1 人</span>
-                                                    <button class="btn btn-sm btn-link p-0 ms-2"><i class="fas fa-edit"></i></button>
-                                                </div>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
-                                                <div>
                                                     <h6 class="mb-0"><span class="badge bg-secondary me-2">普通用户</span></h6>
                                                     <small class="text-muted">可以查看和评论内容</small>
                                                 </div>
                                                 <div>
-                                                    <span class="badge bg-light text-dark">3 人</span>
+                                                    <span class="badge bg-light text-dark">4 人</span>
                                                     <button class="btn btn-sm btn-link p-0 ms-2"><i class="fas fa-edit"></i></button>
                                                 </div>
                                             </li>
@@ -1414,7 +1403,7 @@
                                             <div class="timeline-item mb-3 pb-3 border-bottom">
                                                 <div class="d-flex">
                                                     <div class="me-3">
-                                                        <img src="https://via.placeholder.com/32" class="rounded-circle">
+                                                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="rounded-circle" style="width: 32px; height: 32px; object-fit: cover;">
                                                     </div>
                                                     <div>
                                                         <p class="mb-0"><strong>李四</strong> 编辑了自己的个人资料</p>
@@ -1425,10 +1414,10 @@
                                             <div class="timeline-item mb-3 pb-3 border-bottom">
                                                 <div class="d-flex">
                                                     <div class="me-3">
-                                                        <img src="https://via.placeholder.com/32" class="rounded-circle">
+                                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="rounded-circle" style="width: 32px; height: 32px; object-fit: cover;">
                                                     </div>
                                                     <div>
-                                                        <p class="mb-0"><strong>张三</strong> 将 <strong>王五</strong> 的角色修改为编辑者</p>
+                                                        <p class="mb-0"><strong>张三</strong> 将 <strong>王五</strong> 的角色修改为普通用户</p>
                                                         <small class="text-muted">昨天 16:45</small>
                                                     </div>
                                                 </div>
@@ -1436,7 +1425,7 @@
                                             <div class="timeline-item">
                                                 <div class="d-flex">
                                                     <div class="me-3">
-                                                        <img src="https://via.placeholder.com/32" class="rounded-circle">
+                                                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80" class="rounded-circle" style="width: 32px; height: 32px; object-fit: cover;">
                                                     </div>
                                                     <div>
                                                         <p class="mb-0"><strong>张三</strong> 禁用了用户 <strong>周八</strong></p>
@@ -1501,7 +1490,7 @@
                                     <option>全部时间</option>
                                 </select>
                                 <button class="btn btn-outline-secondary btn-sm me-2"><i class="fas fa-sync-alt"></i></button>
-                                <button class="btn btn-outline-primary btn-sm"><i class="fas fa-download me-1"></i> 导出报表</button>
+                                <button class="btn btn-outline-primary btn-sm" style="width: 240px;"><i class="fas fa-download me-1"></i> 导出报表</button>
                             </div>
                         </div>
                         
