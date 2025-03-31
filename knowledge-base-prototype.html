@@ -967,31 +967,23 @@
                         <!-- 顶部导航栏 -->
                         <div class="header d-flex justify-content-between align-items-center rounded mb-4">
                             <div class="d-flex align-items-center">
-                                <a href="#" class="btn btn-sm btn-outline-secondary me-3" style="width: 160px"><i class="fas fa-arrow-left"></i> 返回</a>
+                                <a href="#" class="btn btn-outline-secondary me-2"><i class="fas fa-arrow-left"></i> </a>
                                 <input type="text" class="form-control" value="产品需求说明文档" placeholder="文档标题">
                             </div>
                             <div class="d-flex">
                                 <button class="btn btn-outline-secondary me-2"><i class="fas fa-history"></i> 历史版本</button>
-                                <div class="dropdown me-2">
-                                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                        <i class="fas fa-share-alt"></i> 分享
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-users me-2"></i>公开分享</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-lock me-2"></i>私密分享</a></li>
-                                        <li><a class="dropdown-item" href="#"><i class="fas fa-link me-2"></i>复制链接</a></li>
-                                    </ul>
-                                </div>
-                                <button class="btn btn-primary"><i class="fas fa-save me-1"></i> 保存</button>
+                                <button class="btn btn-primary"><i class="fas fa-save me-1"></i> 保存更改</button>
                             </div>
                         </div>
                         
                         <!-- 编辑器区域 -->
                         <div class="row mb-4">
                             <div class="col-md-9">
-                                <h3>文档预览</h3>
-                                <!-- 编辑器内容区 -->
                                 <div class="card">
+                                    <div class="card-header bg-light d-flex align-items-center">
+                                        <i class="fas fa-file-alt text-primary me-2"></i>
+                                        <h6 class="mb-0">文档预览</h6>
+                                    </div>
                                     <div class="card-body">
                                         <div style="min-height: 400px;">
                                             <h1>产品需求说明文档</h1>
@@ -1029,7 +1021,8 @@
                             <!-- 侧边属性栏 -->
                             <div class="col-md-3">
                                 <div class="card mb-3">
-                                    <div class="card-header">
+                                    <div class="card-header bg-light d-flex align-items-center">
+                                        <i class="fas fa-info-circle text-primary me-2"></i>
                                         <h6 class="mb-0">文档属性</h6>
                                     </div>
                                     <div class="card-body">
@@ -1054,41 +1047,16 @@
                                             <label class="form-label">权限设置</label>
                                             <select class="form-select">
                                                 <option>所有人可查看</option>
-                                                <option>所有人可编辑</option>
-                                                <option>仅指定人员可查看</option>
-                                                <option>仅指定人员可编辑</option>
+                                                <option>仅部分人可查看</option>
+                                                <option>不可查看</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 
-                                <div class="card mb-3">
-                                    <div class="card-header">
-                                        <h6 class="mb-0">协作者</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="d-flex align-items-center mb-2">
-                                            <img src="https://via.placeholder.com/32" class="rounded-circle me-2">
-                                            <div>
-                                                <div class="fw-bold">张三</div>
-                                                <small class="text-muted">创建者</small>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center mb-2">
-                                            <img src="https://via.placeholder.com/32" class="rounded-circle me-2">
-                                            <div>
-                                                <div class="fw-bold">李四</div>
-                                                <small class="text-muted">编辑者</small>
-                                            </div>
-                                        </div>
-                                        <button class="btn btn-sm btn-outline-secondary w-100 mt-2">
-                                            <i class="fas fa-plus me-1"></i> 添加协作者
-                                        </button>
-                                    </div>
-                                </div>
-                                
                                 <div class="card">
-                                    <div class="card-header">
+                                    <div class="card-header bg-light d-flex align-items-center">
+                                        <i class="fas fa-chart-line text-info me-2"></i>
                                         <h6 class="mb-0">统计信息</h6>
                                     </div>
                                     <div class="card-body">
